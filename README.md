@@ -1,2 +1,2 @@
-# graying.github.io ＃
+#graying.github.io＃
 my pages
