@@ -26,7 +26,8 @@
     </p>
     <script>
         function myFunction1() {
-            document.getElementById("demo").innerHTML = "you clicked me";
+            docu = document.getElementById("demo");
+            docu.innerHTML = "you clicked me";
         }
     </script>
 
@@ -38,10 +39,19 @@
     <script>
         function myFunction() {
             document.getElementById("demo1").innerHTML = "Hello JavaScript!";
+            // document.write("hi all");
+            // document.write("<br />");
+            // document.write("hi all2");
         }
     </script>
-
+    <script type="text/javascript">
+        function changeColor() {
+            docu = document.getElementById("demo1");
+            docu.style.color = "ORANGE";
+        }
+    </script>
     <button type="button" onclick="myFunction()">点我</button>
+    <button type="button" onclick="changeColor()">改变字体颜色</button>
 
 </body>
 
