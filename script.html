@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>简单的脚本示范</title>
+</head>
+
+<body>
+    <a href="/"><img border="0" src="Icon/back.png" alt="Back" witdh="50" height="50" /></a><br>
+    <script type="text/javascript">
+        document.write("hello world this is in the javascript")
+    </script>
+    <p>
+        JavaScript 能够直接写入 HTML 输出流中：
+    </p>
+    <script>
+        document.write("<h1>这是一个标题</h1>");
+        document.write("<p>这是一个段落。</p>");
+    </script>
+    <p>
+        您只能在 HTML 输出流中使用 <strong>document.write</strong>。 如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+    </p>
+    <p id="demo">
+        按钮事件文本<br />
+    </p>
+    <script>
+        function myFunction1() {
+            document.getElementById("demo").innerHTML = "you clicked me";
+        }
+    </script>
+
+    <button type="button" onclick="myFunction1()"> Click Me </button>
+    <br />
+    <p id="demo1">
+        JavaScript 可以触发事件，就像按钮点击。</p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo1").innerHTML = "Hello JavaScript!";
+        }
+    </script>
+
+    <button type="button" onclick="myFunction()">点我</button>
+
+</body>
+
+</html>
