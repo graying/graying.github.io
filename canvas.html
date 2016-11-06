@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="utf-8" />
+    <title>canvas exmples</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;"></canvas>
+    <br />
+    <!-- script function to draw a rectangle in canvas -->
+    <script type="text/javascript">
+        function drawRect() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 150, 75);
+        }
+    </script>
+    <button type="button" onclick="drawRect()" name="drawRect">Draw a Rectangle</button>
+</body>
+
+</html>
