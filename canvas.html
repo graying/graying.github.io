@@ -18,7 +18,25 @@
             ctx.fillRect(0, 0, 150, 75);
         }
     </script>
+    <!-- script function to draw an circle/arc in canvas -->
+    <script type="text/javascript">
+        function drawArc() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+        }
+    </script>
     <button type="button" onclick="drawRect()" name="drawRect">Draw a Rectangle</button>
+    <br />
+    <button type="button" onclick="drawArc()" name="drawArc">Draw an Arc</button>
+    <br />
+    <script type="text/javascript">
+      drawArc();
+    </script>
+    
+
 </body>
 
 </html>
