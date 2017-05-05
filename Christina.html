@@ -7,14 +7,31 @@
 </head>
 
 <body>
+  audio {
+       width:100% !important;
+       min-height: 30px;
+       display:block;
+    }
+
+
+    #block {
+           height:100px;
+           width: 50px;
+           background: blue;
+        }
+
     <h1>Song Player</h1>
     <p>
         James Blunt - You're Beautiful
     </p>
-    <audio id="myautio" controls>
+    <!-- <audio id="myautio" controls>
       <source src="media/James Blunt - You're Beautiful.mp3" type="audio/mpeg" />
-    </audio>
-    <p>MTV Ms.Dong</p>
+    </audio> -->
+
+    <div id="block"></div>
+        <audio id="audio" preload="auto" tabindex="0" controls="controls" type="audio/mpeg">
+            <source type="audio/mp3" src="media/James Blunt - You're Beautiful.mp3">
+        </audio>
 </body>
 
 </html>
